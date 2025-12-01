@@ -2,26 +2,24 @@ version: '3.8'
 
 services:
   bot:
-    build: .
-    restart: always
+    image: ghcr.io/l1vesgood/announcement-discord:latest
+    container_name: announcement-discord-bot
     env_file:
       - .env
-    environment:
-      - DATABASE_URL=postgresql+asyncpg://user:password@postgres/db
     depends_on:
       - postgres
-    volumes:
-      - .:/app
+    restart: unless-stopped
 
   postgres:
     image: postgres:15
-    restart: always
+    container_name: announcement-discord-postgres
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
       POSTGRES_DB: db
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
 
 volumes:
   postgres_data:
