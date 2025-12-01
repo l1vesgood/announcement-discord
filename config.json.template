@@ -1,0 +1,52 @@
+{
+    "player_role_id": 1375010833100443788,
+    "guild_id": 1374415620996595744,
+    "channels": [
+        {
+            "name": "Скриншоты",
+            "emoji": "🤣",
+            "description": "Картинки",
+            "id": 1444635029044068382,
+            "auto_reactions": [
+                "👍",
+                "👎"
+            ],
+            "rules": "Скриншоты с сервера",
+            "format": [
+                "image",
+                "both"
+            ],
+            "contacts": false
+        },
+        {
+            "name": "Торговля",
+            "emoji": "🛒",
+            "description": "description",
+            "id": 1445106364304064533,
+            "auto_reactions": [],
+            "rules": "rules",
+            "format": [
+                "image",
+                "text",
+                "both"
+            ],
+            "contacts": true
+        },
+        {
+            "name": "Мемы",
+            "emoji": "🤣",
+            "description": "description",
+            "id": 1445109535638421686,
+            "auto_reactions": [
+                "👍",
+                "👎"
+            ],
+            "rules": "rules",
+            "format": [
+                "image",
+                "both"
+            ],
+            "contacts": false
+        }
+    ]
+}
